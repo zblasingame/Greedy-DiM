@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="We present Greedy-DiM, an unreasonably effective framework for creating face morphs with diffusion models.">
+  <meta property="og:title" content="Greedy-DiM: Greedy Algorithms for Unreasonably Effective Face Morphs"/>
+  <meta property="og:description" content="We present Greedy-DiM, an unreasonably effective framework for creating face morphs with diffusion models."/>
+  <meta property="og:url" content="https://zblasingame.github.io/Greedy-DiM"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <!-- <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/> -->
+
+
+  <meta name="twitter:title" content="Greedy-DiM: Greedy Algorithms for Unreasonably Effective Face Morphs">
+  <meta name="twitter:description" content="We present Greedy-DiM, an unreasonably effective framework for creating face morphs with diffusion models.">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Greedy-DiM, Diffusion, Face Morphing, Diffusion Morphs, ">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>DiM: Diffusion Morphs</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="css/bulma-slider.min.css">
+  <link rel="stylesheet" href="css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="js/fontawesome.all.min.js"></script>
+  <script src="js/bulma-carousel.min.js"></script>
+  <script src="js/bulma-slider.min.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">
+              Greedy-DiM: Greedy Algorithms for Unreasonably Effective Face Morphs
+            </h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?hl=en&user=gBBtH3AAAAAJ" target="_blank">Zander W. Blasingame</a> and </span>
+                <span class="author-block">
+                  <a href="https://camel.clarkson.edu/members.html" target="_blank">Chen Liu</a></span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Clarkson University<br>IJCB 2024</span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                      <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2404.06025" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                 <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2404.06025" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+                      
+               <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/zblasingame/Greedy-DiM" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="assets/greedy_dim_morph_comp.png" alt="Morph visual comparison">
+      <h2 class="subtitle has-text-centered">
+          We propose Greedy-DiM a novel method which uses greedy methods to perform identity guided generation. Our proposed method has unrivaled morphing performance and visual fidelity fooling the studied FR systems <em>100%</em> of the time. We compare our morphs to those produced by other DiM methods.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Morphing attacks are an emerging threat to state-of-the-art Face Recognition (FR) systems, which aim to create a single image that contains the biometric information of multiple identities. Diffusion Morphs (DiM) are a recently proposed morphing attack that has achieved state-of-the-art performance for representation-based morphing attacks. However, none of the existing research on DiMs have leveraged the iterative nature of DiMs and left the DiM model as a black box, treating it no differently than one would a Generative Adversarial Network (GAN) or Varational AutoEncoder (VAE). We propose a greedy strategy on the iterative sampling process of DiM models which searches for an optimal step guided by an identity-based heuristic function. We compare our proposed algorithm against ten other state-of-the-art morphing algorithms using the open-source SYN-MAD 2022 competition dataset. We find that our proposed algorithm is unreasonably effective, fooling all of the tested FR systems with an MMPMR of 100%, outperforming all other morphing algorithms compared. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<section class="section hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="level-set has-text-justified">
+        <p>
+          The face morphing attack attempts to fool a Face Recongition (FR) system by producing a <em>single</em> image which registers a false accept with <em>both</em> orginal identities. Previous face morphing attacks used landmark-based methods which align and warp the two faces before performing a pixel-wise average between the two faces. Such techniques are prone to considerably artefacts, especially outside the center of the face. Conversely, Generative Adversarial Network (GAN) based morphs produce more realistic looking faces but their performance, but their effectivness in fooling the FR system leaves much to be desired. DiMs outperform GAN-based morphs; however, they still lag behind landmark-based morphs in terms of fooling an FR system. We propose Greedy-DiM* a family of algorithms which leverage a simple greedy strategy to <em>massively</em> improve the effectiveness of DiM while still retaining the high visual fidelity of DiM.
+        </p>
+      </div>
+      <img class="blend-img-background center-image" src="assets/greedy_dim_example_morph.png" alt="Example morphed image produced by Greedy-DiM">
+    </div>
+  </div>
+</section>
+
+  <section class="section hero is-small is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Proposed Face Morphing Method (Greedy-DiM*)</h2>
+      <div class="level-set has-text-justified">
+        <p>
+          We propose a simple greedy strategy on the steps of the numerical ODE solver in diffusion models. During each timestep Greedy-DiM* performs a search using gradient descent to find the optimal predicted noise w.r.t. some heuristic funciton. This simple greedy strategy allows us to <em>cheaply</em> incorporate identity guidance while massively improving the effectiveness of the created morphs. Morover, we <em>prove</em> that Greedy-DiM takes the correct step at each timestep, ie., Greedy-DiM is globally optimal.
+        </p>
+      </div>
+      <img class="blend-img-background center-image" src="assets/greedy_dim_star.png" alt="Overview of Greedy-DiM method">
+      <p>
+        <strong>Overview of DiM</strong> Overview of a single step of the Greedy-DiM* algorithm. Proposed changes highlighted in green.
+      </p>
+       <img class="blend-img-background center-image" src="assets/alg_comp.png" alt="Comparison of DiM methods">
+      <p>
+        <strong>Comparison of DiM Algorithms</strong> Comparison of all current DiM methods to Greedy-DiM.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img class="center-image" src="assets/greedy_dim_mmpmr.png" alt="MMPMR Results"/>
+        <h2 class="subtitle has-text-centered">
+           Vulnerability of ArcFace, AdaFace, and ElasticFace to different morphing attacks on the SYN-MAD 2022 dataset. Greedy-DiM* far outperforms everything else achieving a <em>100%</em> MMPMR across the board.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img class="center-image" src="assets/greedy_dim_map.png" alt="MAP Results"/>
+        <h2 class="subtitle has-text-centered">
+           Vulnerability of ArcFace, AdaFace, and ElasticFace to different morphing attacks on the SYN-MAD 2022 dataset. Greedy-DiM* surpasses everything else with a <em>100%</em> MAP on all three FR systems
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img class="center-image" src="assets/greedy_dim_ablation.png" alt="Vulnerability Study"/>
+        <h2 class="subtitle has-text-centered">
+         Ability of a morph detector to detect unseen morphing attacks. Three scenarios wherein the detector is trained on OpenCV, MIPGAN-II, or DiM-A morphs.
+       </h2>
+     </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+    
+  <section class="section hero is-small is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Justification for the Unreasonable Perfomance of Greedy-DiM</h2>
+      <div class="level-set has-text-justified">
+        <p>
+          The search space of Greedy-DiM* is well-posed whereas previous attempts are ill-posed. We <em>prove</em> that the probabilty that the search space of Morph-PIPE contains the optimal solution is 0 and that the probability the search space of Greedy-DiM* contains the optimal solution is 1.
+        </p>
+      </div>
+      <img class="blend-img-background center-image" src="assets/greedy_dim_search_space.png" alt="Fast-DiM MMPMR">
+      <p>
+        <strong>Comparison of Search Spaces</strong> Illustration of the search space of different DiM algorithms. Purple denotes Morph-PIPE/Greedy-DiM-S, red denotes Greedy-DiM-S continuous, and green dentoes Greedy-DiM*. Note the search spaces of all algorithms other than Greedy-DiM* lie in a low dimensional manifold.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img class="center-image" src="assets/greedy_dim_star_morphs.png" alt="Greedy-DiM* Morphs"/>
+        <h2 class="subtitle has-text-centered">
+          Example morphs generated by Greedy-DiM*.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img class="center-image" src="assets/greedy_dim_s_morphs.png" alt="Greedy-DiM-S Morphs"/>
+        <h2 class="subtitle has-text-centered">
+           Example morphs generated by Greedy-DiM-S.
+        </h2>
+      </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+  
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="assets/eab_citer_dim_poster.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+        @misc{blasingame_greedy_dim,
+              title={Greedy-DiM: Greedy Algorithms for Unreasonably Effective Face Morphs}, 
+              author={Zander W. Blasingame and Chen Liu},
+              year={2024},
+              eprint={2404.06025},
+              archivePrefix={arXiv},
+              primaryClass={cs.CV},
+              url={https://arxiv.org/abs/2404.06025}, 
+        }
+      </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <h2 class="title">Acknowledgements</h2>
+        <div class="content">
+          <p>
+            This work was supported by the Center for Identification Technology Research (CITeR) and National Science Foundation (NSF) under Grant 1650503.
+          </p>
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
+
