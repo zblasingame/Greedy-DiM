@@ -2,13 +2,13 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Meta tags for social media banners, these should be filled in appropriately as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
   <meta name="description" content="We present Greedy-DiM, an unreasonably effective framework for creating face morphs with diffusion models.">
   <meta property="og:title" content="Greedy-DiM: Greedy Algorithms for Unreasonably Effective Face Morphs"/>
   <meta property="og:description" content="We present Greedy-DiM, an unreasonably effective framework for creating face morphs with diffusion models."/>
   <meta property="og:url" content="https://zblasingame.github.io/Greedy-DiM"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <!-- Path to banner image, should be in the path listed below. Optimal dimensions are 1200X630-->
   <!-- <meta property="og:image" content="static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/> -->
@@ -23,7 +23,7 @@
 
   <title>Greedy-DiM: Greedy Algorithms for Unreasonably Effective Face Morphs</title>
   
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -131,7 +131,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Morphing attacks are an emerging threat to state-of-the-art Face Recognition (FR) systems, which aim to create a single image that contains the biometric information of multiple identities. Diffusion Morphs (DiM) are a recently proposed morphing attack that has achieved state-of-the-art performance for representation-based morphing attacks. However, none of the existing research on DiMs have leveraged the iterative nature of DiMs and left the DiM model as a black box, treating it no differently than one would a Generative Adversarial Network (GAN) or Varational AutoEncoder (VAE). We propose a greedy strategy on the iterative sampling process of DiM models which searches for an optimal step guided by an identity-based heuristic function. We compare our proposed algorithm against ten other state-of-the-art morphing algorithms using the open-source SYN-MAD 2022 competition dataset. We find that our proposed algorithm is unreasonably effective, fooling all of the tested FR systems with an MMPMR of 100%, outperforming all other morphing algorithms compared. 
+            Morphing attacks are an emerging threat to state-of-the-art Face Recognition (FR) systems, which aim to create a single image that contains the biometric information of multiple identities. Diffusion Morphs (DiM) are a recently proposed morphing attack that has achieved state-of-the-art performance for representation-based morphing attacks. However, none of the existing research on DiMs have leveraged the iterative nature of DiMs and left the DiM model as a black box, treating it no differently than one would a Generative Adversarial Network (GAN) or Variational AutoEncoder (VAE). We propose a greedy strategy on the iterative sampling process of DiM models which searches for an optimal step guided by an identity-based heuristic function. We compare our proposed algorithm against ten other state-of-the-art morphing algorithms using the open-source SYN-MAD 2022 competition dataset. We find that our proposed algorithm is unreasonably effective, fooling all of the tested FR systems with an MMPMR of 100%, outperforming all other morphing algorithms compared. 
           </p>
         </div>
       </div>
@@ -145,7 +145,7 @@
     <div class="container is-max-desktop">
       <div class="level-set has-text-justified">
         <p>
-          The face morphing attack attempts to fool a Face Recongition (FR) system by producing a <em>single</em> image which registers a false accept with <em>both</em> orginal identities. Previous face morphing attacks used landmark-based methods which align and warp the two faces before performing a pixel-wise average between the two faces. Such techniques are prone to considerably artefacts, especially outside the center of the face. Conversely, Generative Adversarial Network (GAN) based morphs produce more realistic looking faces but their performance, but their effectivness in fooling the FR system leaves much to be desired. DiMs outperform GAN-based morphs; however, they still lag behind landmark-based morphs in terms of fooling an FR system. We propose Greedy-DiM* a family of algorithms which leverage a simple greedy strategy to <em>massively</em> improve the effectiveness of DiM while still retaining the high visual fidelity of DiM.
+          The face morphing attack attempts to fool a Face Recognition (FR) system by producing a <em>single</em> image which registers a false accept with <em>both</em> original identities. Previous face morphing attacks used landmark-based methods which align and warp the two faces before performing a pixel-wise average between the two faces. Such techniques are prone to considerably artefacts, especially outside the center of the face. Conversely, Generative Adversarial Network (GAN) based morphs produce more realistic looking faces but their performance, but their effectiveness in fooling the FR system leaves much to be desired. DiMs outperform GAN-based morphs; however, they still lag behind landmark-based morphs in terms of fooling an FR system. We propose Greedy-DiM* a family of algorithms which leverage a simple greedy strategy to <em>massively</em> improve the effectiveness of DiM while still retaining the high visual fidelity of DiM.
         </p>
       </div>
       <img class="blend-img-background center-image" src="assets/greedy_dim_example_morph.png" alt="Example morphed image produced by Greedy-DiM">
@@ -159,7 +159,7 @@
       <h2 class="title is-3">Proposed Face Morphing Method (Greedy-DiM*)</h2>
       <div class="level-set has-text-justified">
         <p>
-          We propose a simple greedy strategy on the steps of the numerical ODE solver in diffusion models. During each timestep Greedy-DiM* performs a search using gradient descent to find the optimal predicted noise w.r.t. some heuristic funciton. This simple greedy strategy allows us to <em>cheaply</em> incorporate identity guidance while massively improving the effectiveness of the created morphs. Morover, we <em>prove</em> that Greedy-DiM takes the correct step at each timestep, ie., Greedy-DiM is globally optimal.
+          We propose a simple greedy strategy on the steps of the numerical ODE solver in diffusion models. During each timestep Greedy-DiM* performs a search using gradient descent to find the optimal predicted noise w.r.t. some heuristic function. This simple greedy strategy allows us to <em>cheaply</em> incorporate identity guidance while massively improving the effectiveness of the created morphs. Moreover, we <em>prove</em> that Greedy-DiM takes the correct step at each timestep, ie., Greedy-DiM is globally optimal.
         </p>
       </div>
       <img class="blend-img-background center-image" src="assets/greedy_dim_star.png" alt="Overview of Greedy-DiM method">
@@ -213,12 +213,12 @@
       <h2 class="title is-3">Justification for the Unreasonable Perfomance of Greedy-DiM</h2>
       <div class="level-set has-text-justified">
         <p>
-          The search space of Greedy-DiM* is well-posed whereas previous attempts are ill-posed. We <em>prove</em> that the probabilty that the search space of Morph-PIPE contains the optimal solution is 0 and that the probability the search space of Greedy-DiM* contains the optimal solution is 1.
+          The search space of Greedy-DiM* is well-posed whereas previous attempts are ill-posed. We <em>prove</em> that the probability that the search space of Morph-PIPE contains the optimal solution is 0 and that the probability the search space of Greedy-DiM* contains the optimal solution is 1.
         </p>
       </div>
       <img class="blend-img-background center-image" src="assets/greedy_dim_search_space.png" alt="Fast-DiM MMPMR">
       <p>
-        <strong>Comparison of Search Spaces</strong> Illustration of the search space of different DiM algorithms. Purple denotes Morph-PIPE/Greedy-DiM-S, red denotes Greedy-DiM-S continuous, and green dentoes Greedy-DiM*. Note the search spaces of all algorithms other than Greedy-DiM* lie in a low dimensional manifold.
+        <strong>Comparison of Search Spaces</strong> Illustration of the search space of different DiM algorithms. Purple denotes Morph-PIPE/Greedy-DiM-S, red denotes Greedy-DiM-S continuous, and green denotes Greedy-DiM*. Note the search spaces of all algorithms other than Greedy-DiM* lie in a low dimensional manifold.
       </p>
     </div>
   </div>
@@ -309,4 +309,3 @@
 
 </body>
 </html>
-
