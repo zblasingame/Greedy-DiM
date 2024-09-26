@@ -1,0 +1,17 @@
+# Configuration file for Greedy-DiM-S algorithm. See Eq. (10) in https://arxiv.org/abs/2404.06025
+---
+encoding_timesteps: 250
+sampling_timesteps: 20
+scheduler_kwargs:
+  n_train_steps: 1000
+  solver_order: 1
+  prediction_type: epsilon
+  algorithm_type: dpmsolver++
+encoding_solver: diffae
+greedy:
+  type: search
+  kwargs:
+    n_weights: 21
+loss_fn:
+  type: zhang_identity_prior
+  arcface_backbone: backbones/glint360k_cosface_r100_fp16_0.1/backbone.pth

@@ -1,0 +1,15 @@
+# Configuration file for Fast-DiM-ode algorithm. See https://arxiv.org/abs/2310.09484
+---
+encoding_timesteps: 100
+sampling_timesteps: 50
+scheduler_kwargs:
+  n_train_steps: 1000
+  solver_order: 2
+  prediction_type: epsilon
+  algorithm_type: dpmsolver++
+encoding_solver: dpmsolver
+encoder_kwargs:
+  n_train_steps: 1000
+  solver_order: 1
+  prediction_type: epsilon
+  algorithm_type: dpmsolver++
