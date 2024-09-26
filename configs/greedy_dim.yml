@@ -12,10 +12,10 @@ greedy:
   type: opt
   kwargs:
     n_opt_steps: 50
-    n_opt_stride: 1
+    opt_stride: 1
     opt_kwargs:
       lr: 0.01
       betas: [0.5, 0.9]
 loss_fn:
   type: zhang_identity_prior
-  arcface_backbone: backbones/glint360k_cosface_r100_fp16_0.1/backbone.pth
+  arcface_backbone: arcface/glint360k_cosface_r100_fp16_0.1/backbone.pth

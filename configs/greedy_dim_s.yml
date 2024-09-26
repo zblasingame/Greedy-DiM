@@ -14,4 +14,4 @@ greedy:
     n_weights: 21
 loss_fn:
   type: zhang_identity_prior
-  arcface_backbone: backbones/glint360k_cosface_r100_fp16_0.1/backbone.pth
+  arcface_backbone: arcface/glint360k_cosface_r100_fp16_0.1/backbone.pth
