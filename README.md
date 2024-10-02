@@ -6,7 +6,8 @@
 
 <sup>1</sup> Clarkson University
 
-[![arXiv](https://img.shields.io/badge/arXiv-<2404.06025>-<COLOR>.svg)](https://arxiv.org/abs/2404.06025)
+[![arXiv](https://img.shields.io/badge/arXiv-<2404.06025>-green.svg)](https://arxiv.org/abs/2404.06025)
+[![Webpage](https://img.shields.io/badge/webpage-zblasingame.github.io/Greedy-DiM/-blue.svg)](https://zblasingame.github.io/Greedy-DiM/)
 </div>
 
 ## News
