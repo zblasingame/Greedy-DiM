@@ -2,9 +2,9 @@
 <h1> Greedy-DiM (IJCB 2024) </h1>
 <h3> Greedy-DiM: Greedy Algorithms for Unreasonably Effective Face Morphs </h3>
 
-[Zander W. Blasingame](https://zblasingame.github.io/)<sup>1</sup>, [Chen Liu](https://camel.clarkson.edu/members.html)<sup>1</sup>
+[Zander W. Blasingame](https://zblasingame.github.io/) &emsp; <b>&middot;</b> &emsp; [Chen Liu](https://camel.clarkson.edu/members.html)
 
-<sup>1</sup> Clarkson University
+Clarkson University
 
 [![arXiv](https://img.shields.io/badge/arXiv-<2404.06025>-green.svg)](https://arxiv.org/abs/2404.06025)
 [![Webpage](https://img.shields.io/badge/webpage-Project%20Page-blue.svg)](https://zblasingame.github.io/Greedy-DiM/)
