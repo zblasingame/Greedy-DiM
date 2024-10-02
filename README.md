@@ -15,20 +15,20 @@
  <!--Along with containing the code for our previous papers [DiM](https://ieeexplore.ieee.org/document/10381591) and [Fast-DiM](https://ieeexplore.ieee.org/document/10569993).-->
 
 <div align="center">
-    <h1> Greedy-DiM (IJCB 2024) </h1>
-    <h3> Greedy-DiM: Greedy Algorithms for Unreasonably Effective Face Morphs </h3>
+<h1> Greedy-DiM (IJCB 2024) </h1>
+<h3> Greedy-DiM: Greedy Algorithms for Unreasonably Effective Face Morphs </h3>
 
-    [Zander W. Blasingame](https://zblasingame.github.io/)<sup>1</sup>, [Chen Liu](https://camel.clarkson.edu/members.html)<sup>1</sup>
+[Zander W. Blasingame](https://zblasingame.github.io/)<sup>1</sup>, [Chen Liu](https://camel.clarkson.edu/members.html)<sup>1</sup>
 
-    <sup>1</sup> Clarkson University
+<sup>1</sup> Clarkson University
 
-    [![arXiv](https://img.shields.io/badge/arXiv-<2404.06025>-<COLOR>.svg)](https://arxiv.org/abs/2404.06025)
+[![arXiv](https://img.shields.io/badge/arXiv-<2404.06025>-<COLOR>.svg)](https://arxiv.org/abs/2404.06025)
 </div>
 
 ## News
-    - *2024.09.26*: We have released the main code. Configuration details for Greedy-DiM and past models (DiM and Fast-DiM) are found in `configs`
-    - *2024.09.17*: We presented our work in Buffalo, NY. Thanks to everyone who stopped by our posters and listened to our talk!
-    - *2024.07.16*: Congratulations on Greedy-DiM for being accepted by IJCB 2024! Our code base is under development, stay tuned for updates.
+- **2024.09.26**: We have released the main code. Configuration details for Greedy-DiM and past models (DiM and Fast-DiM) are found in `configs`
+- **2024.09.17**: We presented our work in Buffalo, NY. Thanks to everyone who stopped by our posters and listened to our talk!
+- **2024.07.16**: Congratulations on Greedy-DiM for being accepted by IJCB 2024! Our code base is under development, stay tuned for updates.
 
 ## Introduction
 
