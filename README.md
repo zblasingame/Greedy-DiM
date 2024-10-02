@@ -1,18 +1,48 @@
-# Greedy-DiM - Official PyTorch Implementation
+<!--# Greedy-DiM - Official PyTorch Implementation-->
 
-![Static Badge](https://img.shields.io/badge/last%20update-2024.09.26-blue)
+<!--![Static Badge](https://img.shields.io/badge/last%20update-2024.09.26-blue)-->
+
+<!--![Teaser image](./docs/assets/greedy_dim_morph_comp.png)-->
+
+<!--This repository contains the offical PyTorch implementation of the following paper:-->
+
+<!--> **Greedy-DiM: Greedy Algorithms for Unreasonably Effective Face Morphs**<br>-->
+<!--> Zander W. Blasingame and Chen Liu<br>-->
+<!--> [https://arxiv.org/abs/2404.06025](https://arxiv.org/abs/2404.06025)-->
+<!--> -->
+<!--> Abstract: *Morphing attacks are an emerging threat to state-of-the-art Face Recognition (FR) systems, which aim to create a single image that contains the biometric information of multiple identities. Diffusion Morphs (DiM) are a recently proposed morphing attack that has achieved state-of-the-art performance for representation-based morphing attacks. However, none of the existing research on DiMs have leveraged the iterative nature of DiMs and left the DiM model as a black box, treating it no differently than one would a Generative Adversarial Network (GAN) or Variational AutoEncoder (VAE). We propose a greedy strategy on the iterative sampling process of DiM models which searches for an optimal step guided by an identity-based heuristic function. We compare our proposed algorithm against ten other state-of-the-art morphing algorithms using the open-source SYN-MAD 2022 competition dataset. We find that our proposed algorithm is unreasonably effective, fooling all of the tested FR systems with an MMPMR of 100%, outperforming all other morphing algorithms compared.*-->
+
+ <!--Along with containing the code for our previous papers [DiM](https://ieeexplore.ieee.org/document/10381591) and [Fast-DiM](https://ieeexplore.ieee.org/document/10569993).-->
+
+<div align="center">
+    <h1> Greedy-DiM (IJCB 2024) </h1>
+    <h3> Greedy-DiM: Greedy Algorithms for Unreasonably Effective Face Morphs </h3>
+
+    [Zander W. Blasingame](https://zblasingame.github.io/)<sup>1</sup>, [Chen Liu](https://camel.clarkson.edu/members.html)<sup>1</sup>
+
+    <sup>1</sup> Clarkson University
+
+    [![arXiv](https://img.shields.io/badge/arXiv-<2404.06025>-<COLOR>.svg)](https://arxiv.org/abs/2404.06025)
+</div>
+
+## News
+    - *2024.09.26*: We have released the main code. Configuration details for Greedy-DiM and past models (DiM and Fast-DiM) are found in `configs`
+    - *2024.09.17*: We presented our work in Buffalo, NY. Thanks to everyone who stopped by our posters and listened to our talk!
+    - *2024.07.16*: Congratulations on Greedy-DiM for being accepted by IJCB 2024! Our code base is under development, stay tuned for updates.
+
+## Introduction
+
+The official PyTorch implementation of [Greedy-DiM](https://arxiv.org/abs/2404.06025) (**IJCB 2024 Spotlight**), [DiM](https://ieeexplore.ieee.org/document/10381591) (**IEEE TBIOM and IJCB 2024 Oral**), and [Fast-DiM](https://ieeexplore.ieee.org/document/10569993) (**IEEE Security \& Privacy**).
 
 ![Teaser image](./docs/assets/greedy_dim_morph_comp.png)
 
-This repository contains the offical PyTorch implementation of the following paper:
+Greedy-DiM is a *simple* yet **unreasonably effective** face morphing algorithm that far suprasses previous representation-based morphing algorithms and even beats landmark-based morphing algorithms.
+With a simple greedy guided algorithm Greedy-DiM is able to significantly improve the effectiveness of DiM while still retaining the high-visual fidelity that is characteristic of DiM.
+Moreover, we *prove* that the search space of the Greedy-DiM is well-posed and that it contains the **optimal** morphed face.
+Experimental results show that Greedy-DiM is *currently* the strongest face morphing algorithm available, pushing the SOTA.
 
-> **Greedy-DiM: Greedy Algorithms for Unreasonably Effective Face Morphs**<br>
-> Zander W. Blasingame and Chen Liu<br>
-> [https://arxiv.org/abs/2404.06025](https://arxiv.org/abs/2404.06025)
-> 
-> Abstract: *Morphing attacks are an emerging threat to state-of-the-art Face Recognition (FR) systems, which aim to create a single image that contains the biometric information of multiple identities. Diffusion Morphs (DiM) are a recently proposed morphing attack that has achieved state-of-the-art performance for representation-based morphing attacks. However, none of the existing research on DiMs have leveraged the iterative nature of DiMs and left the DiM model as a black box, treating it no differently than one would a Generative Adversarial Network (GAN) or Variational AutoEncoder (VAE). We propose a greedy strategy on the iterative sampling process of DiM models which searches for an optimal step guided by an identity-based heuristic function. We compare our proposed algorithm against ten other state-of-the-art morphing algorithms using the open-source SYN-MAD 2022 competition dataset. We find that our proposed algorithm is unreasonably effective, fooling all of the tested FR systems with an MMPMR of 100%, outperforming all other morphing algorithms compared.*
-
- Along with containing the code for our previous papers [DiM](https://ieeexplore.ieee.org/document/10381591) and [Fast-DiM](https://ieeexplore.ieee.org/document/10569993).
+![Greedy Algorithm](./docs/assets/greedy_dim_star.png)
+The heart of the Greedy-DiM* algorithm.
 
 
 ## Release Notes
@@ -113,7 +143,7 @@ loss_fn:
 We provide a configuration file for several DiM variants.
 
 ## Citation
-If you use this code or ideas from this project in your research, we ask that you cite the following relevant papers:
+If this work is helpful for your research, we ask that you consider citing the relevant papers:
 
 ```bibtex
 @INPROCEEDINGS{blasingame_greedy_dim,
