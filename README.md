@@ -7,10 +7,12 @@
 Clarkson University
 
 [![arXiv](https://img.shields.io/badge/arXiv-<2404.06025>-green.svg)](https://arxiv.org/abs/2404.06025)
+[![Paper](https://img.shields.io/badge/Paper-Camera%20Ready-red.svg)](https://ieeexplore.ieee.org/document/10744517)
 [![Webpage](https://img.shields.io/badge/webpage-Project%20Page-blue.svg)](https://zblasingame.github.io/Greedy-DiM/)
 </div>
 
 ## News
+- **2024.11.11**: Camera ready version is now available on IEEE Xplore!
 - **2024.09.26**: We have released the main code. Configuration details for Greedy-DiM and past models (DiM and Fast-DiM) are found in `configs`
 - **2024.09.17**: We presented our work in Buffalo, NY. Thanks to everyone who stopped by our posters and listened to our talk!
 - **2024.07.16**: Congratulations on Greedy-DiM for being accepted by IJCB 2024! Our code base is under development, stay tuned for updates.
