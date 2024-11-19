@@ -134,13 +134,16 @@ If this work is helpful for your research, we ask that you consider citing the r
 
 ```bibtex
 @INPROCEEDINGS{blasingame_greedy_dim,
-      title={Greedy-DiM: Greedy Algorithms for Unreasonably Effective Face Morphs},
-      booktitle={2024 IEEE International Joint Conference on Biometrics (IJCB)}, 
-      author={Blasingame, Zander W. and Liu, Chen},
-      year={2024},
-      pages={1-10},
-      url={https://arxiv.org/abs/2404.06025}, 
-}
+  author={Blasingame, Zander W. and Liu, Chen},
+  booktitle={2024 IEEE International Joint Conference on Biometrics (IJCB)}, 
+  title={Greedy-DiM: Greedy Algorithms for Unreasonably Effective Face Morphs}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-11},
+  keywords={Greedy algorithms;Schedules;Face recognition;Biological system modeling;Closed box;Generative adversarial networks;Diffusion models;Iterative methods;Optimization},
+  doi={10.1109/IJCB62174.2024.10744517}}
+
 
 @article{blasingame_dim,
    title={Leveraging Diffusion for Strong and High Quality Face Morphing Attacks},
