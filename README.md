@@ -12,6 +12,7 @@ Clarkson University
 </div>
 
 ## News
+- **2024.12.17**: Dataset for morphs created on FRLL is now public!
 - **2024.11.11**: Camera ready version is now available on IEEE Xplore!
 - **2024.09.26**: We have released the main code. Configuration details for Greedy-DiM and past models (DiM and Fast-DiM) are found in `configs`
 - **2024.09.17**: We presented our work in Buffalo, NY. Thanks to everyone who stopped by our posters and listened to our talk!
@@ -54,6 +55,8 @@ Their efficacy measured in MMPMR (Mated Morphed Presentation Match Rate) can be 
 
 ![MMPMR](./docs/assets/greedy_dim_mmpmr.png)
 
+## Dataset
+We have released the morphed images used in our papers on the FRLL dataset at https://huggingface.co/datasets/zblasingame/DiM-FRLL-Morphs
 
 ## Code Release
 In accordance with the our agreement with [CITeR](https://citer.clarkson.edu/) we have encrypted our morphing code.
