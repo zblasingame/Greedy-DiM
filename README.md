@@ -6,10 +6,10 @@
 
 Clarkson University
 
-[![arXiv](https://img.shields.io/badge/arXiv-<2404.06025>-green.svg)](https://arxiv.org/abs/2404.06025)
-[![Paper](https://img.shields.io/badge/Paper-<Camera%20Ready>-red.svg)](https://ieeexplore.ieee.org/document/10744517)
-[![Webpage](https://img.shields.io/badge/Webpage-<Project%20Page>-blue.svg)](https://zblasingame.github.io/Greedy-DiM/)
-[![Dataset](https://img.shields.io/badge/Dataset-<Morph%20Dataset>-purple.svg)](https://huggingface.co/datasets/zblasingame/DiM-FRLL-Morphs)
+[![arXiv](https://img.shields.io/badge/arXiv-b31b1b?style=for-the-badge&logo=arxiv)](https://arxiv.org/abs/2404.06025)
+[![Paper](https://img.shields.io/badge/Camera%20Ready-00629B?style=for-the-badge&logo=ieee)](https://ieeexplore.ieee.org/document/10744517)
+[![Webpage](https://img.shields.io/badge/Webpage-222222?style=for-the-badge&logo=githubpages)](https://zblasingame.github.io/Greedy-DiM/)
+[![Dataset](https://img.shields.io/badge/HuggingFace-1f27ca?style=for-the-badge&logo=HuggingFace&logoColor=yellow)](https://huggingface.co/datasets/zblasingame/DiM-FRLL-Morphs)
 </div>
 
 ## News
