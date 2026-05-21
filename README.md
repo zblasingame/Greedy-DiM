@@ -23,15 +23,19 @@ Clarkson University
 
 The official PyTorch implementation of [Greedy-DiM](https://arxiv.org/abs/2404.06025) (**IJCB 2024 Spotlight**), [DiM](https://ieeexplore.ieee.org/document/10381591) (**IEEE TBIOM and IJCB 2024 Oral**), and [Fast-DiM](https://ieeexplore.ieee.org/document/10569993) (**IEEE Security \& Privacy**).
 
-![Teaser image](./docs/assets/greedy_dim_morph_comp.png)
+| Identity A | DiM-A | Fast-DiM | **Greedy-DiM\*** (ours) | Morph-PIPE | Greedy-DiM-S | Identity B |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| ![066](./docs/assets/figures/comparison/bonafide_066.png) | ![DiM-A 066×087](./docs/assets/figures/comparison/dim_a_066_087.png) | ![Fast-DiM 066×087](./docs/assets/figures/comparison/fast_dim_066_087.png) | ![Greedy-DiM* 066×087](./docs/assets/figures/comparison/greedy_dim_star_066_087.png) | ![Morph-PIPE 066×087](./docs/assets/figures/comparison/morph_pipe_066_087.png) | ![Greedy-DiM-S 066×087](./docs/assets/figures/comparison/greedy_dim_s_066_087.png) | ![087](./docs/assets/figures/comparison/bonafide_087.png) |
+| ![096](./docs/assets/figures/comparison/bonafide_096.png) | ![DiM-A 096×137](./docs/assets/figures/comparison/dim_a_096_137.png) | ![Fast-DiM 096×137](./docs/assets/figures/comparison/fast_dim_096_137.png) | ![Greedy-DiM* 096×137](./docs/assets/figures/comparison/greedy_dim_star_096_137.png) | ![Morph-PIPE 096×137](./docs/assets/figures/comparison/morph_pipe_096_137.png) | ![Greedy-DiM-S 096×137](./docs/assets/figures/comparison/greedy_dim_s_096_137.png) | ![137](./docs/assets/figures/comparison/bonafide_137.png) |
+
+*Two FRLL identity pairs through five DiM-family morphing pipelines, with Greedy-DiM\* (ours) in the center column.*
 
 Greedy-DiM is a *simple* yet **unreasonably effective** face morphing algorithm that far suprasses previous representation-based morphing algorithms and even beats landmark-based morphing algorithms.
 With a simple greedy guided algorithm Greedy-DiM is able to significantly improve the effectiveness of DiM while still retaining the high-visual fidelity that is characteristic of DiM.
 Moreover, we *prove* that the search space of the Greedy-DiM is well-posed and that it contains the **optimal** morphed face.
 Experimental results show that Greedy-DiM is *currently* the strongest face morphing algorithm available, pushing the SOTA.
 
-![Greedy Algorithm](./docs/assets/greedy_dim_star.png)
-The heart of the Greedy-DiM* algorithm.
+An interactive walkthrough of the Greedy-DiM\* algorithm — the inner greedy loop optimizing over the full $\epsilon$-space — is available on the [project webpage](https://zblasingame.github.io/Greedy-DiM/).
 
 
 ## Release Notes
@@ -52,9 +56,7 @@ In addition to Greedy-DiM* we also support the following models:
 | Greedy-DiM-S  | Greedy-DiM with a greedy search strategy results in improved MMPMR and uses less memory |
 
 with configurations files for these different models are found in the `configs` directory.
-Their efficacy measured in MMPMR (Mated Morphed Presentation Match Rate) can be observed in Table 5 from our paper shown below.
-
-![MMPMR](./docs/assets/greedy_dim_mmpmr.png)
+Their efficacy measured in MMPMR (Mated Morphed Presentation Match Rate) is reported in Table 5 of the [paper](https://arxiv.org/abs/2404.06025), and the full results table is also rendered interactively on the [project webpage](https://zblasingame.github.io/Greedy-DiM/).
 
 ## Dataset
 We have released the morphed images used in our papers on the FRLL dataset at https://huggingface.co/datasets/zblasingame/DiM-FRLL-Morphs
